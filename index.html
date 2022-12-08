@@ -1,12 +1,132 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="zh-tw">
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Hello World</title>
+    <!-- adobe font -->
+    <script>
+      (function (d) {
+        var config = {
+            kitId: 'gkh0dkg',
+            scriptTimeout: 3000,
+            async: true,
+          },
+          h = d.documentElement,
+          t = setTimeout(function () {
+            h.className =
+              h.className.replace(/\bwf-loading\b/g, '') + ' wf-inactive';
+          }, config.scriptTimeout),
+          tk = d.createElement('script'),
+          f = false,
+          s = d.getElementsByTagName('script')[0],
+          a;
+        h.className += ' wf-loading';
+        tk.src = 'https://use.typekit.net/' + config.kitId + '.js';
+        tk.async = true;
+        tk.onload = tk.onreadystatechange = function () {
+          a = this.readyState;
+          if (f || (a && a != 'complete' && a != 'loaded')) return;
+          f = true;
+          clearTimeout(t);
+          try {
+            Typekit.load(config);
+          } catch (e) {}
+        };
+        s.parentNode.insertBefore(tk, s);
+      })(document);
+    </script>
+    <!-- css -->
+    <link rel="stylesheet" href="source/healthyLifeLargeScreen.css" />
+    <link rel="stylesheet" href="source/healthyLifeMain.css" />
+    <title>TAAZE讀冊生活｜腸胃開心，身體才會開心</title>
   </head>
-  <body>
-    <h1>Hello World!</h1>
+  <body class="healthyLifeBody">
+    <header class="healthyLifeHeader">
+      <div class="mainBanner">
+        <h1 class="healthyLifeH1">腸胃開心</h1>
+      </div>
+      <h1 class="healthyLifeH1Sub">身體才會開心</h1>
+    </header>
+    <!-- Divider -->
+    <div class="fiveDotsDivider">
+      <div class="dot dot1"></div>
+      <div class="dot dot2"></div>
+      <div class="dot dot3"></div>
+      <div class="dot dot4"></div>
+      <div class="dot dot5"></div>
+    </div>
+    <!-- 單元一：你的身體開心嗎？ -->
+    <section class="sectionIsYourBodyHappy">
+      <!-- 文字區塊 -->
+      <div class="contentIsYourBodyHappy">
+        <div class="imgIsYourBodyHappy">
+          <img class="imgLeafSample" src="img/leafSample.png" alt="" />
+        </div>
+        <div class="textIsYourBodyHappy">
+          <div class="titleIsYourBodyHappy">
+            <h3 class="h3IsYourBodyHappy healthyLifeH3">
+              你的腸胃開<span class="happyHighlight">心</span>嗎？
+            </h3>
+          </div>
+          <div class="descriptionsTextsIsYourBodyHappy">
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui unde
+              modi tempora magni officiis. Nesciunt, asperiores sint blanditiis
+              suscipit ea officiis, iste nemo unde deleniti atque consectetur
+              vel eligendi ducimus!
+            </p>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui
+              doloremque ad quas omnis. Consequatur aliquid officiis, dolore sed
+              iusto quaerat doloribus tempore maiores non provident hic, dolorum
+              ex fuga dolor?
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="flipCardsIsYourBodyHappy"></div>
+    </section>
+
+    <!-- Divider -->
+    <div class="fiveDotsDivider">
+      <div class="dot dot1"></div>
+      <div class="dot dot2"></div>
+      <div class="dot dot3"></div>
+      <div class="dot dot4"></div>
+      <div class="dot dot5"></div>
+    </div>
+    <!-- 單元三：照顧腸胃的必備知識 -->
+    <section class="sectionTakeCareOfYourBody">
+      <div class="contentTakeCareOfYourBody">
+        <div class="textTakeCareOfYourBody">
+          <div class="titleTakeCareOfYourBody">
+            <h3 class="h3TakeCareOfYourBody healthyLifeH3">
+              照顧腸胃的必備知識
+            </h3>
+          </div>
+          <div class="descriptionTakeCareOfYourBody">
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui
+              explicabo minus voluptatum fuga, amet perspiciatis libero sint
+              quas perferendis laboriosam similique alias vel deleniti porro
+              nisi cupiditate facilis necessitatibus adipisci.
+            </p>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores
+              esse consectetur sapiente, eaque praesentium perspiciatis culpa
+              repellendus exercitationem error vero beatae accusantium aliquam,
+              odit id recusandae. Corrupti voluptates voluptas illum?
+            </p>
+          </div>
+          <div class="imgTakeCareOfYourBody">
+            <img class="imgLeaf02" src="img/leaf02.png" alt="" />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- javascript  -->
+    <script src="source/healthyLifeJavascript.js"></script>
   </body>
 </html>

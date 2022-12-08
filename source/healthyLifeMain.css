@@ -1,0 +1,156 @@
+.healthyLifeBody * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: source-han-serif-tc, serif;
+
+}
+
+.mainBanner {
+    background-image: url(../img/mainGreen.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 70vh;
+    position: relative;
+
+}
+
+.healthyLifeHeader {
+    overflow-x: hidden;
+    margin-bottom: 5rem;
+}
+
+.healthyLifeH1 {
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    margin-bottom: -2rem;
+    color: white;
+    font-weight: 700;
+    font-size: 8rem;
+    white-space: nowrap;
+    letter-spacing: -0.8rem;
+}
+
+.healthyLifeH1Sub {
+    text-align: center;
+    font-size: 8rem;
+    font-weight: 700;
+    white-space: nowrap;
+    background-image: url(../img/mainGreen.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+    margin-top: -2.5rem;
+    letter-spacing: -0.8rem;
+}
+
+.healthyLifeH3 {
+    display: inline-block;
+    font-size: 5rem;
+    white-space: nowrap;
+
+}
+
+.happyHighlight {
+    display: inline-block;
+    transform: scale(-1, 1);
+    -moz-transform: scale(-1, 1);
+    -webkit-transform: scale(-1, 1);
+    -o-transform: scale(-1, 1);
+    -ms-transform: scale(-1, 1);
+    transform: scale(-1, 1);
+
+}
+
+.contentIsYourBodyHappy {
+    display: flex;
+    width: 100%;
+    height: 50vh;
+    overflow: hidden;
+
+}
+
+.imgIsYourBodyHappy {
+    flex: 0 0 35%;
+    margin-right: 1rem;
+}
+
+
+.imgLeafSample {
+    width: 100%;
+    filter: grayscale(90%) drop-shadow(5px 10px 10px grey);
+}
+
+.imgLeafSampleTurnGreen {
+    width: 100%;
+    filter: grayscale(0%) drop-shadow(5px 10px 10px grey);
+    transition-property: filter;
+    transition-duration: 0.5s;
+    transition-delay: 1s;
+}
+
+
+
+
+.fiveDotsDivider {
+    height: 50px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 3rem;
+    margin-top: 3rem;
+}
+
+.dot {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+}
+
+:root {
+    --c01: #0abf04;
+    --c02: #09a603;
+    --c03: #067302;
+    --c04: #034001;
+    --c05: #022601;
+}
+
+
+
+.dot1 {
+    background-color: var(--c01);
+}
+
+.dot2 {
+    background-color: var(--c02);
+}
+
+.dot3 {
+    background-color: var(--c03);
+}
+
+.dot4 {
+    background-color: var(--c04);
+}
+
+.dot5 {
+    background-color: var(--c05);
+}
+
+.flipCardsIsYourBodyHappy {
+    margin-top: 1rem;
+    width: 100%;
+    height: 50vh;
+    background-color: var(--c02);
+}
+
+.imgLeaf02 {
+    float: right;
+    filter: drop-shadow(5px 10px 10px grey);
+}
