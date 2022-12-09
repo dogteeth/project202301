@@ -6,6 +6,10 @@
 
 }
 
+p {
+    font-size: 1.2rem;
+}
+
 .mainBanner {
     background-image: url(../img/mainGreen.jpg);
     background-size: cover;
@@ -52,7 +56,7 @@
 .healthyLifeH3 {
     display: inline-block;
     font-size: 5rem;
-    white-space: nowrap;
+    /* white-space: nowrap; */
 
 }
 
@@ -68,27 +72,29 @@
 }
 
 .contentIsYourBodyHappy {
-    display: flex;
-    width: 100%;
-    height: 50vh;
-    overflow: hidden;
+    /* display: flex; */
+    /* width: 100%;*/
+    /* height: 80vh; */
+    /* overflow: hidden; */
 
 }
 
-.imgIsYourBodyHappy {
-    flex: 0 0 35%;
-    margin-right: 1rem;
-}
+/* .imgIsYourBodyHappy {
+    flex: 0 0 30%;
+} */
 
 
 .imgLeafSample {
-    width: 100%;
-    filter: grayscale(90%) drop-shadow(5px 10px 10px grey);
+    float: left;
+    width: 30%;
+    object-fit: cover;
+    filter: grayscale(90%);
+    shape-outside: url(../img/leaf09.png);
+    shape-margin: 3%;
 }
 
 .imgLeafSampleTurnGreen {
-    width: 100%;
-    filter: grayscale(0%) drop-shadow(5px 10px 10px grey);
+    filter: grayscale(0%) drop-shadow(5px 10px 10px black);
     transition-property: filter;
     transition-duration: 0.5s;
     transition-delay: 1s;
@@ -151,6 +157,96 @@
 }
 
 .imgLeaf02 {
+    width: 40%;
     float: right;
     filter: drop-shadow(5px 10px 10px grey);
+    shape-outside: url(../img/leaf02.png);
+    shape-margin: 2%;
 }
+
+.titleTakeCareOfYourBody {
+    display: flex;
+    flex-direction: column;
+}
+
+.healthyLifeH3 {
+    text-align: right;
+}
+
+.textTest {
+    font-size: 2rem;
+    text-align: left;
+}
+
+.descriptionTakeCareOfYourBody {
+    text-align: right;
+}
+
+.leafTwin {}
+
+.leafTwo {
+    width: 400px;
+}
+
+.twin01 {
+    transform: scalex(-1);
+}
+
+
+/*  
+
+讓圖片抖動起來
+
+img:hover {
+animation: shake 0.5s;
+
+animation-iteration-count: infinite;
+}
+
+@keyframes shake {
+    0% {
+        transform: translate(1px, 1px) rotate(0deg);
+    }
+
+    10% {
+        transform: translate(-1px, -2px) rotate(-1deg);
+    }
+
+    20% {
+        transform: translate(-3px, 0px) rotate(1deg);
+    }
+
+    30% {
+        transform: translate(3px, 2px) rotate(0deg);
+    }
+
+    40% {
+        transform: translate(1px, -1px) rotate(1deg);
+    }
+
+    50% {
+        transform: translate(-1px, 2px) rotate(-1deg);
+    }
+
+    60% {
+        transform: translate(-3px, 1px) rotate(0deg);
+    }
+
+    70% {
+        transform: translate(3px, 1px) rotate(-1deg);
+    }
+
+    80% {
+        transform: translate(-1px, -1px) rotate(1deg);
+    }
+
+    90% {
+        transform: translate(1px, 2px) rotate(0deg);
+    }
+
+    100% {
+        transform: translate(1px, -2px) rotate(-1deg);
+    }
+}
+
+*/
