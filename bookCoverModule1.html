@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      :root {
+        --c01: #0abf04;
+        --c02: #09a603;
+        --c03: #067302;
+        --c04: #034001;
+        --c05: #022601;
+        --textBlack: black;
+        --textGrey: rgb(99, 96, 96);
+      }
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      .sectionModule {
+        width: 100%;
+        height: 30vh;
+        display: flex;
+        justify-content: center;
+        margin: 0.5rem 0.5rem 0.5rem 2rem;
+        border-radius: 50% 0 0 50%;
+      }
+      .booksDosModule {
+        width: 40%;
+        display: flex;
+        justify-content: space-evenly;
+      }
+      .bookModule {
+        flex: 0 0 10%;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+      }
+      .divider01 {
+        width: 0.5rem;
+        background-color: white;
+      }
+      .dividerImg {
+        /* background-image: url(img/mainGreen.jpg); */
+        flex: 0 0 30%;
+        /* background-size: cover; */
+      }
+      .imgBookCover {
+        width: 200px;
+        padding: 1rem;
+        filter: drop-shadow(2px 6px 5px rgba(0, 0, 0, 0.3));
+      }
+      .h1Text {
+        backdrop-filter: blur(5px);
+        color: white;
+        text-align: right;
+        writing-mode: vertical-rl;
+      }
+
+      .section01 {
+        background-color: var(--c01);
+      }
+      .section02 {
+        background-color: var(--c02);
+      }
+      .section03 {
+        background-color: var(--c03);
+      }
+      .section04 {
+        background-color: var(--c04);
+      }
+      .section05 {
+        background-color: var(--c05);
+      }
+    </style>
+  </head>
+  <body>
+    <div class="sectionModule section01">
+      <div class="dividerImg">
+        <h1 class="h1Text">腸胃啊腸胃，別再互相傷害了好嗎？</h1>
+      </div>
+      <div class="divider01"></div>
+      <div class="booksDosModule">
+        <div class="bookModule">
+          <div class="bookCover">
+            <img src="img/bk01.png" alt="" class="imgBookCover" />
+          </div>
+          <div class="bookDescription">
+            <p class="pHealthyLife">護胃也要全方位</p>
+          </div>
+        </div>
+        <div class="bookModule">
+          <div class="bookCover">
+            <img src="img/bk02.png" alt="" class="imgBookCover" />
+          </div>
+          <div class="bookDescription">
+            <p class="pHealthyLife">積極治療胃食道逆流</p>
+          </div>
+        </div>
+      </div>
+      <div class="divider01"></div>
+    </div>
+    <div class="sectionModule section02">
+      <div class="dividerImg">
+        <h1 class="h1Text">腸胃啊腸胃，別再互相傷害了好嗎？</h1>
+      </div>
+      <div class="divider01"></div>
+      <div class="booksDosModule">
+        <div class="bookModule">
+          <div class="bookCover">
+            <img src="img/book01.jpg" alt="" class="imgBookCover" />
+          </div>
+          <div class="bookDescription">
+            <p class="pHealthyLife">護胃也要全方位</p>
+          </div>
+        </div>
+        <div class="bookModule">
+          <div class="bookCover">
+            <img src="img/book02.jpg" alt="" class="imgBookCover" />
+          </div>
+          <div class="bookDescription">
+            <p class="pHealthyLife">積極治療胃食道逆流</p>
+          </div>
+        </div>
+      </div>
+      <div class="divider01"></div>
+    </div>
+    <div class="sectionModule section03">
+      <div class="dividerImg">
+        <h1 class="h1Text">腸胃啊腸胃，別再互相傷害了好嗎？</h1>
+      </div>
+      <div class="divider01"></div>
+      <div class="booksDosModule">
+        <div class="bookModule">
+          <div class="bookCover">
+            <img src="img/book01.jpg" alt="" class="imgBookCover" />
+          </div>
+          <div class="bookDescription">
+            <p class="pHealthyLife">護胃也要全方位</p>
+          </div>
+        </div>
+        <div class="bookModule">
+          <div class="bookCover">
+            <img src="img/book02.jpg" alt="" class="imgBookCover" />
+          </div>
+          <div class="bookDescription">
+            <p class="pHealthyLife">積極治療胃食道逆流</p>
+          </div>
+        </div>
+      </div>
+      <div class="divider01"></div>
+    </div>
+    <div class="sectionModule section04">
+      <div class="dividerImg">
+        <h1 class="h1Text">腸胃啊腸胃，別再互相傷害了好嗎？</h1>
+      </div>
+      <div class="divider01"></div>
+      <div class="booksDosModule">
+        <div class="bookModule">
+          <div class="bookCover">
+            <img src="img/book01.jpg" alt="" class="imgBookCover" />
+          </div>
+          <div class="bookDescription">
+            <p class="pHealthyLife">護胃也要全方位</p>
+          </div>
+        </div>
+        <div class="bookModule">
+          <div class="bookCover">
+            <img src="img/book02.jpg" alt="" class="imgBookCover" />
+          </div>
+          <div class="bookDescription">
+            <p class="pHealthyLife">積極治療胃食道逆流</p>
+          </div>
+        </div>
+      </div>
+      <div class="divider01"></div>
+    </div>
+    <div class="sectionModule section05">
+      <div class="dividerImg">
+        <h1 class="h1Text">腸胃啊腸胃，別再互相傷害了好嗎？</h1>
+      </div>
+      <div class="divider01"></div>
+      <div class="booksDosModule">
+        <div class="bookModule">
+          <div class="bookCover">
+            <img src="img/book01.jpg" alt="" class="imgBookCover" />
+          </div>
+          <div class="bookDescription">
+            <p class="pHealthyLife">護胃也要全方位</p>
+          </div>
+        </div>
+        <div class="bookModule">
+          <div class="bookCover">
+            <img src="img/book02.jpg" alt="" class="imgBookCover" />
+          </div>
+          <div class="bookDescription">
+            <p class="pHealthyLife">積極治療胃食道逆流</p>
+          </div>
+        </div>
+      </div>
+      <div class="divider01"></div>
+    </div>
+  </body>
+</html>

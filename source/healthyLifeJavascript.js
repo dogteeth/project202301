@@ -1,11 +1,11 @@
-const target = document.querySelector('.imgLeafSample');
+const target = document.querySelector('.imgLeafSection01');
 
 function handleIntersection(entries) {
   entries.map((entry) => {
     if (entry.isIntersecting) {
-      entry.target.classList.add('imgLeafSampleTurnGreen');
+      entry.target.classList.add('imgLeafSection01TurnGreen');
     } else {
-      entry.target.classList.remove('imgLeafSampleTurnGreen');
+      entry.target.classList.remove('imgLeafSection01TurnGreen');
     }
   });
 }
