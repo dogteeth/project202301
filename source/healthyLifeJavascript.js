@@ -1,15 +1,22 @@
-const target = document.querySelector('.imgLeafSection01');
+const imgsLeafGreen = document.querySelectorAll('.imgLeafGreen');
 
-function handleIntersection(entries) {
-  entries.map((entry) => {
-    if (entry.isIntersecting) {
-      entry.target.classList.add('imgLeafSection01TurnGreen');
-    } else {
-      entry.target.classList.remove('imgLeafSection01TurnGreen');
-    }
-  });
-}
+const observer = new IntersectionObserver(
+  (entries) => {
+    entries.forEach((entry) => {
+      if (entry.isIntersecting) {
+        console.log('is intersecting');
+        entry.target.classList.add('imgLeafGray');
+      } else {
+        console.log('is gone');
+        entry.target.classList.remove('imgLeafGray');
+      }
+    });
+  },
+  {
+    threshold: 0.95,
+  }
+);
 
-const observer = new IntersectionObserver(handleIntersection);
-
-observer.observe(target);
+imgsLeafGreen.forEach((imgLeafGreen) => {
+  observer.observe(imgLeafGreen);
+});

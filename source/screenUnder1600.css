@@ -1,0 +1,650 @@
+ /*待刪除 */
+ /* body {
+     background-color: purple;
+ } */
+
+ /* */
+
+ /* 基本設定 > 字體 */
+
+ /* 基本設定 > 單元區標體 */
+ .h2HealthyLife {
+     white-space: nowrap;
+     font-size: 5rem;
+     text-align: left;
+ }
+
+ /* 基本設定 > 色調 */
+ :root {
+     --c00: #9ae497;
+     --c01: #0abf04;
+     --c02: #09a603;
+     --c03: #067302;
+     --c04: #034001;
+     --c05: #022601;
+     --textBlack: black;
+     --textGrey: rgb(99, 96, 96);
+ }
+
+ /* 基本設定 > 單元區內文 */
+ .pHealthyLife {
+     font-size: 1.5rem;
+     color: rgb(99, 96, 96);
+     margin: 0.5rem 1rem 0.5rem 1rem;
+     text-align: justify;
+ }
+
+ /* 基本設定 > 字體強調 */
+ .textEmphasized {
+     font-style: normal;
+     font-weight: 700;
+     color: black;
+ }
+
+ /* 基本設定 > 字體左右翻轉 */
+ .textFlipped {
+     display: inline-block;
+     -moz-transform: scale(-1, 1);
+     -webkit-transform: scale(-1, 1);
+     -o-transform: scale(-1, 1);
+     -ms-transform: scale(-1, 1);
+     transform: scale(-1, 1);
+ }
+
+ /* 基本設定 > Divider */
+ .fiveDotsDivider {
+     height: 50px;
+     width: 100%;
+     display: flex;
+     align-items: center;
+     justify-content: center;
+     gap: 3rem;
+     margin: 8rem 0rem 0.5rem;
+ }
+
+ .dot {
+     width: 30px;
+     height: 30px;
+     border-radius: 50%;
+ }
+
+ .dot1 {
+     background-color: var(--c01);
+ }
+
+ .dot2 {
+     background-color: var(--c02);
+ }
+
+ .dot3 {
+     background-color: var(--c03);
+ }
+
+ .dot4 {
+     background-color: var(--c04);
+ }
+
+ .dot5 {
+     background-color: var(--c05);
+ }
+
+ .dotShadow {
+     box-shadow: 0px 2px 3px 1px rgb(76, 104, 85);
+ }
+
+
+ /* 主視覺 > header影像 */
+ .mainBanner {
+     background-image: url(../img/mainGreen.jpg);
+     background-size: cover;
+     background-repeat: no-repeat;
+     width: 100%;
+     height: 70vh;
+     position: relative;
+
+ }
+
+ /* 主視覺 > header與下方divider寛度 */
+ .headerHealthyLife {
+     margin-bottom: 5rem;
+ }
+
+ /* 主視覺 > 腸胃開心-字體設定 */
+ .h1HealthyLife {
+     position: absolute;
+     bottom: 0;
+     left: 50%;
+     transform: translateX(-50%);
+     margin-bottom: -2rem;
+     color: white;
+     font-weight: 700;
+     font-size: 8rem;
+     white-space: nowrap;
+     letter-spacing: -0.8rem;
+ }
+
+ /* 主視覺 > 身體才會開心-字體設定 文字鏤空後秀背景 */
+ .h1SubHealthyLife {
+     text-align: center;
+     font-size: 8rem;
+     font-weight: 700;
+     white-space: nowrap;
+     background-image: url(../img/mainGreen.jpg);
+     background-size: cover;
+     background-repeat: no-repeat;
+     background-clip: text;
+     -webkit-background-clip: text;
+     color: transparent;
+     margin-top: -2.5rem;
+     letter-spacing: -0.8rem;
+ }
+
+
+
+ /* 單元區 > 基本設定 */
+
+ .sectionContent {
+     width: 65%;
+     margin: auto;
+ }
+
+ /* 單元區 > 葉片設定-原始  */
+ .imgLeaf {
+     width: 40%;
+     filter: grayscale(100%) drop-shadow(1px -5px 5px black);
+ }
+
+ /* 單元區 > 葉片設定-動畫後(intersection observer */
+ .imgLeafAnimated {
+     transition-delay: 2s;
+     transition-duration: 2s;
+     transition-property: filter;
+     filter: grayscale(0%) drop-shadow(5px 5px 5px black);
+ }
+
+
+ /* 單元區 > 單元一  */
+ /* 加大單元一的葉子 */
+ .leafSection01.imgLeaf {
+     width: 55%;
+ }
+
+ .leafSection01 {
+     float: left;
+     shape-outside: url(../img/leaf02.png);
+     shape-margin: 2%;
+ }
+
+ .takeCareOfYourBody .h2HealthyLife {
+     text-align: center;
+ }
+
+
+ /* 單元區 > 單元二  */
+ /* 加大單元二的葉子 */
+ .leafSection02.imgLeaf {
+     width: 55%;
+     margin: 1rem;
+ }
+
+ .leafSection02 {
+     float: right;
+     shape-outside: url(../img/leaf07.png);
+     shape-margin: 2%;
+ }
+
+ /* 單元區 > 單元三  - be your own doctor */
+ .leafSection03 {
+     float: right;
+     shape-outside: url(../img/leaf10.png);
+     shape-margin: 2%;
+ }
+
+ .beYourOwnDoctor .h2HealthyLife {
+     text-align: center;
+ }
+
+ /* 單元區 > 單元四  */
+ .leafSection04 {
+     float: right;
+     shape-outside: url(../img/leaf09.png);
+     shape-margin: 2%;
+ }
+
+ /* 單元區 > 商品區 */
+ /* 單元區 > 商品區 > 標題背景 */
+ .headerPromo {
+     display: flex;
+     width: 100%;
+     height: 40vh;
+     background-image: url(../img/mainGreen.jpg);
+     background-size: cover;
+     align-items: center;
+     justify-content: center;
+     margin-top: 2rem;
+
+ }
+
+ /* 單元區 > 商品區 > 標題 */
+ .h2Promo {
+     color: white;
+     padding: 1.5% 12rem 1.5% 12rem;
+     border-top: white solid 0.3rem;
+     border-bottom: white solid 0.3rem;
+     border-radius: 1rem;
+
+     /* 模糊字體後的背景 */
+     -webkit-backdrop-filter: blur(10px);
+     -o-backdrop-filter: blur(5px);
+     -moz-backdrop-filter: blur(5px);
+     -ms-backdrop-filter: blur(5px);
+     backdrop-filter: blur(10px);
+ }
+
+ /* 單元區 > 商品區 > 各入口的背景產色 */
+ .m01 {
+     background-color: var(--c01);
+ }
+
+ .m02 {
+     background-color: var(--c02);
+ }
+
+ .m03 {
+     background-color: var(--c03);
+ }
+
+ .m04 {
+     background-color: var(--c04);
+ }
+
+ .m05 {
+     background-color: var(--c05);
+ }
+
+ /* 單元區 > 商品區 > 單一入口基本設定 */
+ .promoModule {
+     width: 100%;
+     display: flex;
+ }
+
+ /* 單元區 > 商品區 > 單一入口基本設定 > 入口文字設定 */
+ .promoHeader {
+     width: 40%;
+     display: flex;
+     flex-direction: column;
+     justify-content: space-between;
+ }
+
+ .textHeader {
+     font-size: 2rem;
+     font-weight: 300;
+ }
+
+ .textHeader,
+ .moreLink {
+     margin: 1rem;
+     text-align: right;
+     color: white;
+     line-height: normal;
+     text-shadow: 1px 2px 1px rgba(0, 0, 0, 0.9);
+ }
+
+ .promoLink:link {
+     color: white;
+     text-decoration: none;
+ }
+
+ .promoLink:visited {
+     color: white;
+ }
+
+ .promoLink:hover {
+     color: white;
+     text-shadow: -3px 3px 3px rgba(0, 0, 0, 1);
+ }
+
+ /* 單元區 > 商品區 > 單一入口基本設定 > 入口文字與商品Divider */
+ .promoDivider {
+     background-color: white;
+     width: 0.2rem;
+     margin: 1rem;
+     border-radius: 1rem;
+ }
+
+ /* 單元區 > 商品區 > 單一入口基本設定 > 雙書區塊設定 */
+ .booksDosModule {
+     padding: 0.2rem;
+     display: flex;
+ }
+
+ .bookAndText {
+     margin: 1rem;
+     padding: 0.5rem;
+     border-top: 5px white solid;
+     border-bottom: 5px white solid;
+     border-radius: 1rem;
+     display: flex;
+ }
+
+ .descriptionsBook {
+     writing-mode: vertical-lr;
+     font-size: 1.2em;
+     background-color: white;
+     margin: 5px;
+     padding: 0.5rem;
+     border-radius: 1rem;
+     border: #067302 solid 2px;
+     margin-left: 0px;
+     z-index: 1;
+ }
+
+ .descriptionsBook>.pHealthyLife {
+     font-size: 1.2rem;
+     margin: 0.1rem 0rem 0.1rem 0rem;
+ }
+
+ .imgBookCover {
+     width: 200px;
+     height: 300px;
+     object-fit: contain;
+     filter: drop-shadow(5px 5px 5px rgba(0, 0, 0, 0.7));
+ }
+
+ .promoLink:hover .imgBookCover {
+     filter: drop-shadow(5px 10px 5px rgba(0, 0, 0, 0.7));
+ }
+
+ .m04 .promoLink:hover,
+ .m05 .promoLink:hover {
+     color: white;
+     /* --c01: rgb(10, 191, 4); */
+     text-shadow: 0px 5px 4px rgb(10, 191, 4);
+ }
+
+ .m04 .promoLink:hover .imgBookCover,
+ .m05 .promoLink:hover .imgBookCover {
+     /* --textGrey: rgb(99, 96, 96); */
+     filter: drop-shadow(0px 5px 2px rgba(10, 191, 4, 0.5));
+ }
+
+ /* 影片嵌入區 */
+ .videoUnoSupplement {
+     width: 100%;
+     height: auto;
+     background-color: var(--c03);
+     display: flex;
+     padding: 1rem;
+     gap: 1rem;
+     margin-top: 1rem;
+ }
+
+ .videoUnoContainer {
+     flex: 0 0 45%;
+     border-radius: 1rem;
+     padding: 0.5rem;
+ }
+
+ .youtubeEmbeded {
+     position: relative;
+     padding-bottom: 56.25%;
+     height: 0;
+ }
+
+ .youtubeEmbeded iframe {
+     position: absolute;
+     top: 0;
+     left: 0;
+     width: 100%;
+     height: 100%;
+     border: white solid 5px;
+     border-radius: 1rem;
+ }
+
+ .h1VideoDescriptions {
+     text-align: right;
+     font-size: 2rem;
+     color: white;
+     margin: 0.5rem 1rem 0.5rem 1rem;
+ }
+
+ .descriptionsContainer>.pHealthyLife {
+     color: white;
+     text-align: right;
+ }
+
+ .descriptionsContainer.takeCareOfYourBody {
+     order: -1;
+ }
+
+ .videoDosSupplement {
+     width: 100%;
+     display: flex;
+     background-color: var(--c03);
+     gap: 2rem;
+     padding: 2rem;
+     margin-top: 1rem;
+     justify-content: center;
+ }
+
+ .videoDosSupplement p {
+     color: white;
+ }
+
+ .videoDosOne {
+     border: solid white 5px;
+     border-radius: 1rem;
+     width: 35%;
+ }
+
+ .youtubeContainerVideoDos {
+     position: relative;
+     padding-bottom: 56.25%;
+     height: 0;
+ }
+
+ .youtubeContainerVideoDos iframe {
+     position: absolute;
+     top: 0;
+     left: 0;
+     width: 100%;
+     height: 100%;
+     border-radius: 1rem 1rem 0rem 0rem;
+     box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.3);
+ }
+
+ .videoDosDescriptions {
+     margin: 1rem;
+ }
+
+ /* 互動卡：基本設定 > 背景 */
+ .cardsContainer {
+     margin: 1rem 0;
+     /* background-color: var(--c01); */
+     background: linear-gradient(to left,
+             rgba(10, 191, 4, 1) 0%,
+             rgba(10, 191, 4, 0) 50%);
+ }
+
+ /* 互動卡：基本設定 > 卡盒設定 */
+ .cardsDeck {
+     margin: 0rem 1rem;
+     height: 50vh;
+     display: flex;
+     overflow-x: auto;
+     flex-wrap: nowrap;
+     align-items: center;
+     justify-content: space-between;
+     -webkit-overflow-scrolling: touch;
+ }
+
+
+
+ /* 互動卡：基本設定 > 卡盒滾輪隱藏 */
+
+ ::-webkit-scrollbar {
+     height: 0.7rem;
+     width: 4px;
+     background: var(--c01);
+ }
+
+ ::-webkit-scrollbar-thumb:horizontal {
+     background: var(--c03);
+     border-radius: 10px;
+ }
+
+ /* 互動卡：基本設定 > 卡片基本設定 */
+ .card {
+     width: 300px;
+     margin: 0.5rem;
+     height: 90%;
+     flex: 0 0 auto;
+     border-radius: 2rem;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+ }
+
+ /* 互動卡：基本設定 > 卡片翻轉設定 */
+ .card__inner {
+     width: 100%;
+     height: 100%;
+     transition: transform 1s;
+     transform-style: preserve-3d;
+     cursor: pointer;
+ }
+
+ .card__inner.is-flipped {
+     transform: rotateY(180deg);
+ }
+
+ .card__face {
+     position: absolute;
+     width: 100%;
+     height: 100%;
+     -webkit-backface-visibility: hidden;
+     backface-visibility: hidden;
+     overflow: hidden;
+     border-radius: 2rem;
+     box-shadow: 0px 3px 18px 3px rgba(0, 0, 0, 0.5);
+     padding: 1rem;
+ }
+
+ /* 互動卡：基本設定 > 卡片內容設定 */
+ .card__content {
+     height: 100%;
+     display: flex;
+     width: 90%;
+     justify-content: center;
+     align-items: center;
+     flex-direction: column;
+ }
+
+ /* 互動卡：基本設定 > 卡片正面 */
+ .card__face--front {
+     background-image: linear-gradient(to bottom right,
+             var(--c01),
+             var(--c05));
+     display: flex;
+     align-items: center;
+     justify-content: center;
+ }
+
+ /* 互動卡：基本設定 > 卡片背面 */
+ .card__face--back {
+     display: flex;
+     align-items: center;
+     justify-content: center;
+     background-color: var(--c00);
+     transform: rotateY(180deg);
+ }
+
+ /* 互動卡：基本設定 > 字體 */
+ .card__text {
+     text-align: justify;
+ }
+
+ /* 互動卡：基本設定 > 正面字體 */
+ .card__face--front .card__text {
+     color: white;
+     font-size: 1.8rem;
+ }
+
+ /* 互動卡：基本設定 > 背面字體 */
+ h2.card__text {
+     color: black;
+     font-size: 1.5rem;
+ }
+
+ p.card__text {
+     margin-top: 1rem;
+     color: black;
+     font-size: 1.2rem;
+ }
+
+
+ /* 單元二 互動卡 */
+ .takeCareOfYourBody .cardsContainer {
+     margin: 0rem;
+     background: linear-gradient(90deg,
+             rgba(10, 191, 4, 1) 0%,
+             rgba(10, 191, 4, 0) 10%, rgba(10, 191, 4, 0) 90%, rgb(10, 191, 4, 1) 100%);
+ }
+
+ /* 單元三 互動卡 */
+ .beYourOwnDoctor .cardsContainer {
+     margin: 0rem;
+     background: linear-gradient(90deg,
+             rgba(10, 191, 4, 1) 0%,
+             rgba(10, 191, 4, 0.5) 50%, rgba(10, 191, 4, 0.5) 50%, rgb(10, 191, 4, 1) 100%);
+ }
+
+ /* 單元四 互動卡 */
+ .beBetterEveryDay .cardsContainer {
+     margin: 0rem;
+     background: linear-gradient(90deg,
+             rgba(10, 191, 4, 1) 0%,
+             rgba(10, 191, 4, 0.5) 50%, rgba(10, 191, 4, 0.5) 50%, rgb(10, 191, 4, 1) 100%);
+ }
+
+
+ /* 編輯推薦書單元 兩本 */
+ .dosEditorChoiceContainer {
+     display: flex;
+     align-items: flex-start;
+     justify-content: center;
+ }
+
+ .dosEditorChoice {
+     flex: 0 0 50%;
+     display: flex;
+     margin: 1rem;
+     border-top: 5px solid green;
+     border-bottom: 5px solid green;
+     border-radius: 1rem;
+     justify-content: center;
+     align-items: flex-start;
+ }
+
+ .bookCoverDosEditorChoice {
+     margin: 1rem;
+     width: 180px;
+     height: 250px;
+     object-fit: contain;
+     filter: drop-shadow(2px 2px 2px rgba(0, 0, 0, 0.7));
+ }
+
+ .bookCoverDosEditorChoice:hover {
+     filter: drop-shadow(5px 5px 5px rgba(0, 0, 0, 0.7));
+ }
+
+ .bookCoverDosEditorChoice.bkE05 {
+     height: initial;
+ }
+
+ .textDosEditorChoice {
+     margin-top: 1rem;
+     margin-bottom: 1rem;
+     padding-right: 1rem;
+     font-size: 1.2rem;
+ }

@@ -11,3 +11,44 @@ font-family: source-han-serif-tc, serif;
 #keyword
 healthyLife
 
+
+/* 基本設定 > 字體 */
+
+/* 基本設定 > 單元區標體 */
+.h2HealthyLife {
+    white-space: nowrap;
+    text-align: left;
+}
+
+/*基本設定 > 單元區標體 > 多媒體  */
+@media (max-width:400px) {
+
+    .h2HealthyLife {
+        font-size: 2rem;
+    }
+}
+
+
+@media (min-width:401px) and (max-width:900px) {
+
+
+    .h2HealthyLife {
+        font-size: 3rem;
+    }
+}
+
+
+@media (min-width: 901px) and (max-width:1600px) {
+
+
+    .h2HealthyLife {}
+}
+
+@media(min-width:1601px) {
+
+
+
+    .h2HealthyLife {
+        font-size: 5rem;
+    }
+}
