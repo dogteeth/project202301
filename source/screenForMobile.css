@@ -1,12 +1,4 @@
-/* 基本設定 > 字體 */
-
-/* 基本設定 > 單元區標體 */
-.h2HealthyLife {
-    white-space: nowrap;
-    font-size: 5rem;
-    text-align: left;
-}
-
+/* screen for mobile */
 /* 基本設定 > 色調 */
 :root {
     --c00: #9ae497;
@@ -20,8 +12,18 @@
 }
 
 /* 基本設定 > 單元區內文 */
+
+/* 基本設定 > 字體 */
+/* 基本設定 > 單元區標體 */
+.h2HealthyLife {
+    /* font-size: 2rem; */
+    font-size: 8vw;
+    text-align: center;
+
+}
+
 .pHealthyLife {
-    font-size: 1.5rem;
+    font-size: 5vw;
     color: rgb(99, 96, 96);
     margin: 0.5rem 1rem 0.5rem 1rem;
     text-align: justify;
@@ -51,8 +53,8 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    gap: 3rem;
-    margin: 8rem 0rem 0.5rem;
+    gap: 1rem;
+    margin: 2rem 0rem 0rem;
 }
 
 .dot {
@@ -108,18 +110,18 @@
     bottom: 0;
     left: 50%;
     transform: translateX(-50%);
-    margin-bottom: -2rem;
+    margin-bottom: -3vw;
     color: white;
     font-weight: 700;
-    font-size: 8rem;
+    font-size: 15vw;
     white-space: nowrap;
-    letter-spacing: -0.8rem;
+    letter-spacing: -0.2rem;
 }
 
 /* 主視覺 > 身體才會開心-字體設定 文字鏤空後秀背景 */
 .h1SubHealthyLife {
     text-align: center;
-    font-size: 8rem;
+    font-size: 15vw;
     font-weight: 700;
     white-space: nowrap;
     background-image: url(../img/mainGreen.jpg);
@@ -128,7 +130,7 @@
     background-clip: text;
     -webkit-background-clip: text;
     color: transparent;
-    margin-top: -2.5rem;
+    margin-top: -5vw;
     letter-spacing: -0.8rem;
 }
 
@@ -143,7 +145,7 @@
 
 /* 單元區 > 葉片設定-原始  */
 .imgLeaf {
-    width: 40%;
+    width: 90%;
     filter: grayscale(100%) drop-shadow(1px -5px 5px black);
 }
 
@@ -159,13 +161,12 @@
 /* 單元區 > 單元一  */
 /* 加大單元一的葉子 */
 .leafSection01.imgLeaf {
-    width: 55%;
+    width: 90%;
 }
 
+
 .leafSection01 {
-    float: left;
-    shape-outside: url(../img/leaf02.png);
-    shape-margin: 2%;
+    float: none;
 }
 
 .takeCareOfYourBody .h2HealthyLife {
@@ -176,19 +177,19 @@
 /* 單元區 > 單元二  */
 /* 加大單元二的葉子 */
 .leafSection02.imgLeaf {
-    width: 55%;
+    width: 90%;
     margin: 1rem;
 }
 
 .leafSection02 {
-    float: right;
-    shape-outside: url(../img/leaf07.png);
-    shape-margin: 2%;
+    float: none;
+    /* shape-outside: url(../img/leaf07.png);
+    shape-margin: 2%; */
 }
 
 /* 單元區 > 單元三  - be your own doctor */
 .leafSection03 {
-    float: right;
+    float: none;
     shape-outside: url(../img/leaf10.png);
     shape-margin: 2%;
 }
@@ -199,9 +200,9 @@
 
 /* 單元區 > 單元四  */
 .leafSection04 {
-    float: right;
-    shape-outside: url(../img/leaf09.png);
-    shape-margin: 2%;
+    float: none;
+    /* shape-outside: url(../img/leaf09.png);
+    shape-margin: 2%; */
 }
 
 /* 單元區 > 商品區 */
@@ -209,7 +210,7 @@
 .headerPromo {
     display: flex;
     width: 100%;
-    height: 40vh;
+    height: 30vh;
     background-image: url(../img/mainGreen.jpg);
     background-size: cover;
     align-items: center;
@@ -220,8 +221,9 @@
 
 /* 單元區 > 商品區 > 標題 */
 .h2Promo {
+    font-size: 2.2rem;
     color: white;
-    padding: 1.5% 12rem 1.5% 12rem;
+    padding: 0.5rem 1rem;
     border-top: white solid 0.3rem;
     border-bottom: white solid 0.3rem;
     border-radius: 1rem;
@@ -259,31 +261,38 @@
 .promoModule {
     width: 100%;
     display: flex;
+    flex-direction: column;
 }
 
 /* 單元區 > 商品區 > 單一入口基本設定 > 入口文字設定 */
 .promoHeader {
-    width: 40%;
+    width: 100%;
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    justify-content: center;
+    align-items: center;
 }
 
 .textHeader {
+    padding-top: 2rem;
     font-size: 2rem;
     font-weight: 300;
+
 }
+
 
 .textHeader,
 .moreLink {
-    margin: 1rem;
-    text-align: right;
+
+    margin-top: 1rem;
+    text-align: center;
     color: white;
     line-height: normal;
     text-shadow: 1px 2px 1px rgba(0, 0, 0, 0.9);
 }
 
 .promoLink:link {
+    display: inline;
     color: white;
     text-decoration: none;
 }
@@ -299,16 +308,20 @@
 
 /* 單元區 > 商品區 > 單一入口基本設定 > 入口文字與商品Divider */
 .promoDivider {
-    background-color: white;
+    display: none;
+    /* background-color: white;
     width: 0.2rem;
     margin: 1rem;
-    border-radius: 1rem;
+    border-radius: 1rem; */
 }
 
 /* 單元區 > 商品區 > 單一入口基本設定 > 雙書區塊設定 */
 .booksDosModule {
     padding: 0.2rem;
     display: flex;
+    flex-direction: column;
+    align-items: center;
+
 }
 
 .bookAndText {
@@ -367,13 +380,14 @@
     height: auto;
     background-color: var(--c03);
     display: flex;
+    flex-direction: column;
     padding: 1rem;
-    gap: 1rem;
+    /* gap: 1rem; */
     margin-top: 1rem;
 }
 
 .videoUnoContainer {
-    flex: 0 0 45%;
+    /* flex: 0 0 45%; */
     border-radius: 1rem;
     padding: 0.5rem;
 }
@@ -395,27 +409,26 @@
 }
 
 .h1VideoDescriptions {
-    text-align: right;
-    font-size: 2rem;
+    font-size: 1.5rem;
     color: white;
     margin: 0.5rem 1rem 0.5rem 1rem;
 }
 
 .descriptionsContainer>.pHealthyLife {
     color: white;
-    text-align: right;
 }
 
 .descriptionsContainer.takeCareOfYourBody {
-    order: -1;
+    order: 1;
 }
 
 .videoDosSupplement {
     width: 100%;
     display: flex;
+    flex-direction: column;
     background-color: var(--c03);
-    gap: 2rem;
-    padding: 2rem;
+    gap: 1rem;
+    padding: 1rem;
     margin-top: 1rem;
     justify-content: center;
 }
@@ -427,7 +440,7 @@
 .videoDosOne {
     border: solid white 5px;
     border-radius: 1rem;
-    width: 35%;
+    /* width: 90%; */
 }
 
 .youtubeContainerVideoDos {
@@ -604,19 +617,21 @@ p.card__text {
 /* 編輯推薦書單元 兩本 */
 .dosEditorChoiceContainer {
     display: flex;
-    align-items: flex-start;
+    flex-direction: column;
+    align-items: center;
     justify-content: center;
 }
 
 .dosEditorChoice {
-    flex: 0 0 50%;
     display: flex;
+    flex-direction: column;
     margin: 1rem;
     border-top: 5px solid green;
     border-bottom: 5px solid green;
     border-radius: 1rem;
     justify-content: center;
-    align-items: flex-start;
+    align-items: center;
+    width: 70%;
 }
 
 .bookCoverDosEditorChoice {
@@ -636,8 +651,8 @@ p.card__text {
 }
 
 .textDosEditorChoice {
-    margin-top: 1rem;
+    /* margin-top: 1rem; */
     margin-bottom: 1rem;
-    padding-right: 1rem;
     font-size: 1.2rem;
+    text-align: justify;
 }

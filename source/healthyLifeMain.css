@@ -48,7 +48,6 @@ li.logo_banner_entry {
 
 /* 基本設定 > 全域 */
 * {
-    max-height: fit-content;
     margin: 0;
     padding: 0;
     box-sizing: border-box;

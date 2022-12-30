@@ -1,20 +1,4 @@
-/* */
-
-body {
-    max-width: 19200px;
-    max-height: 1080px;
-    margin: auto;
-}
-
-/* 基本設定 > 字體 */
-
-/* 基本設定 > 單元區標體 */
-.h2HealthyLife {
-    white-space: nowrap;
-    font-size: 8vw;
-    text-align: left;
-}
-
+/* screen between desktop and mobile */
 /* 基本設定 > 色調 */
 :root {
     --c00: #9ae497;
@@ -27,9 +11,19 @@ body {
     --textGrey: rgb(99, 96, 96);
 }
 
+/* 基本設定 > 字體 */
+
+/* 基本設定 > 單元區標體 */
+.h2HealthyLife {
+    white-space: nowrap;
+    font-size: 5rem;
+    text-align: left;
+}
+
+
 /* 基本設定 > 單元區內文 */
 .pHealthyLife {
-    font-size: 2vw;
+    font-size: 1.5rem;
     color: rgb(99, 96, 96);
     margin: 0.5rem 1rem 0.5rem 1rem;
     text-align: justify;
@@ -54,7 +48,7 @@ body {
 
 /* 基本設定 > Divider */
 .fiveDotsDivider {
-    height: 5vw;
+    height: 50px;
     width: 100%;
     display: flex;
     align-items: center;
@@ -64,8 +58,8 @@ body {
 }
 
 .dot {
-    width: 2vw;
-    height: 2vw;
+    width: 30px;
+    height: 30px;
     border-radius: 50%;
 }
 
@@ -116,18 +110,18 @@ body {
     bottom: 0;
     left: 50%;
     transform: translateX(-50%);
-    margin-bottom: -3vw;
+    margin-bottom: -2rem;
     color: white;
     font-weight: 700;
-    font-size: 12vw;
+    font-size: 8rem;
     white-space: nowrap;
-    letter-spacing: -0.8vw;
+    letter-spacing: -0.8rem;
 }
 
 /* 主視覺 > 身體才會開心-字體設定 文字鏤空後秀背景 */
 .h1SubHealthyLife {
     text-align: center;
-    font-size: 12vw;
+    font-size: 8rem;
     font-weight: 700;
     white-space: nowrap;
     background-image: url(../img/mainGreen.jpg);
@@ -136,8 +130,8 @@ body {
     background-clip: text;
     -webkit-background-clip: text;
     color: transparent;
-    margin-top: -4vw;
-    letter-spacing: -1vw;
+    margin-top: -2.5rem;
+    letter-spacing: -0.8rem;
 }
 
 
@@ -145,7 +139,7 @@ body {
 /* 單元區 > 基本設定 */
 
 .sectionContent {
-    width: 65%;
+    width: 90%;
     margin: auto;
 }
 
@@ -230,9 +224,9 @@ body {
 .h2Promo {
     color: white;
     padding: 1.5% 12rem 1.5% 12rem;
-    border-top: white solid 0.3vw;
-    border-bottom: white solid 0.3vw;
-    border-radius: 1vw;
+    border-top: white solid 0.3rem;
+    border-bottom: white solid 0.3rem;
+    border-radius: 1rem;
 
     /* 模糊字體後的背景 */
     -webkit-backdrop-filter: blur(10px);
@@ -275,11 +269,10 @@ body {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    margin: 1.2vw;
 }
 
 .textHeader {
-    font-size: 3vw;
+    font-size: 2rem;
     font-weight: 300;
 }
 
@@ -290,10 +283,6 @@ body {
     color: white;
     line-height: normal;
     text-shadow: 1px 2px 1px rgba(0, 0, 0, 0.9);
-}
-
-.moreLink {
-    font-size: 2vw;
 }
 
 .promoLink:link {
@@ -313,9 +302,9 @@ body {
 /* 單元區 > 商品區 > 單一入口基本設定 > 入口文字與商品Divider */
 .promoDivider {
     background-color: white;
-    width: 0.2vw;
-    margin: 1vw;
-    border-radius: 1vw;
+    width: 0.2rem;
+    margin: 1rem;
+    border-radius: 1rem;
 }
 
 /* 單元區 > 商品區 > 單一入口基本設定 > 雙書區塊設定 */
@@ -325,39 +314,34 @@ body {
 }
 
 .bookAndText {
-
-    margin: 2vw;
+    margin: 1rem;
     padding: 0.5rem;
-    border-top: 0.3vw white solid;
-    border-bottom: 0.3vw white solid;
-    border-radius: 0.5vw;
+    border-top: 5px white solid;
+    border-bottom: 5px white solid;
+    border-radius: 1rem;
     display: flex;
-    justify-content: center;
-    align-items: flex-start;
 }
 
 .descriptionsBook {
     writing-mode: vertical-lr;
     font-size: 1.2em;
     background-color: white;
-    margin: 3vw 0vw;
+    margin: 5px;
     padding: 0.5rem;
     border-radius: 1rem;
     border: #067302 solid 2px;
-
     margin-left: 0px;
     z-index: 1;
 }
 
 .descriptionsBook>.pHealthyLife {
-    font-size: 1.5vw;
-    margin: 1vw 0vw;
+    font-size: 1.2rem;
+    margin: 0.1rem 0rem 0.1rem 0rem;
 }
 
 .imgBookCover {
-    margin: 1vw 0vw;
-    width: 20vw;
-    height: 30vw;
+    width: 200px;
+    height: 300px;
     object-fit: contain;
     filter: drop-shadow(5px 5px 5px rgba(0, 0, 0, 0.7));
 }
@@ -385,15 +369,15 @@ body {
     height: auto;
     background-color: var(--c03);
     display: flex;
-    padding: 1vw;
-    gap: 1vw;
-    margin-top: 1vw;
+    padding: 1rem;
+    gap: 1rem;
+    margin-top: 1rem;
 }
 
 .videoUnoContainer {
     flex: 0 0 45%;
-    border-radius: 1vw;
-    padding: 0.5vw;
+    border-radius: 1rem;
+    padding: 0.5rem;
 }
 
 .youtubeEmbeded {
@@ -408,13 +392,13 @@ body {
     left: 0;
     width: 100%;
     height: 100%;
-    border: white solid 0.5vw;
-    border-radius: 0.5vw;
+    border: white solid 5px;
+    border-radius: 1rem;
 }
 
 .h1VideoDescriptions {
     text-align: right;
-    font-size: 2vw;
+    font-size: 2rem;
     color: white;
     margin: 0.5rem 1rem 0.5rem 1rem;
 }
@@ -432,9 +416,9 @@ body {
     width: 100%;
     display: flex;
     background-color: var(--c03);
-    gap: 2vw;
-    padding: 2vw;
-    margin-top: 1vw;
+    gap: 2rem;
+    padding: 2rem;
+    margin-top: 1rem;
     justify-content: center;
 }
 
@@ -443,8 +427,8 @@ body {
 }
 
 .videoDosOne {
-    border: solid white 0.3vw;
-    border-radius: 0.5vw;
+    border: solid white 5px;
+    border-radius: 1rem;
     width: 35%;
 }
 
@@ -464,8 +448,8 @@ body {
     box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.3);
 }
 
-.videoDosDescriptions p.pHealthyLife {
-    margin: 1vw;
+.videoDosDescriptions {
+    margin: 1rem;
 }
 
 /* 互動卡：基本設定 > 背景 */
@@ -506,8 +490,8 @@ body {
 
 /* 互動卡：基本設定 > 卡片基本設定 */
 .card {
-    width: 20vw;
-    margin: 0.8vw;
+    width: 300px;
+    margin: 0.5rem;
     height: 90%;
     flex: 0 0 auto;
     border-radius: 2rem;
@@ -578,19 +562,19 @@ body {
 /* 互動卡：基本設定 > 正面字體 */
 .card__face--front .card__text {
     color: white;
-    font-size: 2vw;
+    font-size: 1.8rem;
 }
 
 /* 互動卡：基本設定 > 背面字體 */
 h2.card__text {
     color: black;
-    font-size: 1.5vw;
+    font-size: 1.5rem;
 }
 
 p.card__text {
     margin-top: 1rem;
     color: black;
-    font-size: 1.5vw;
+    font-size: 1.2rem;
 }
 
 
@@ -629,7 +613,7 @@ p.card__text {
 .dosEditorChoice {
     flex: 0 0 50%;
     display: flex;
-    margin: 1vw;
+    margin: 1rem;
     border-top: 5px solid green;
     border-bottom: 5px solid green;
     border-radius: 1rem;
@@ -638,8 +622,9 @@ p.card__text {
 }
 
 .bookCoverDosEditorChoice {
-    margin: 1vw;
-    width: 15vw;
+    margin: 1rem;
+    width: 180px;
+    height: 250px;
     object-fit: contain;
     filter: drop-shadow(2px 2px 2px rgba(0, 0, 0, 0.7));
 }
@@ -656,5 +641,5 @@ p.card__text {
     margin-top: 1rem;
     margin-bottom: 1rem;
     padding-right: 1rem;
-    font-size: 1.5vw;
+    font-size: 1.2rem;
 }
