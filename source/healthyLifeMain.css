@@ -47,9 +47,46 @@ li.logo_banner_entry {
 }
 
 /* 基本設定 > 全域 */
+
+:root {
+    --c00: #9ae497;
+    --c01: #0abf04;
+    --c02: #09a603;
+    --c03: #067302;
+    --c04: #034001;
+    --c05: #022601;
+    --textBlack: black;
+    --textGrey: rgb(99, 96, 96);
+}
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     font-family: source-han-serif-tc, serif;
+}
+
+.pHealthyLifeLink {
+    color: var(--textBlack);
+}
+
+.pHealthyLifeLink:hover {
+    color: var(--textGrey)
+}
+
+.pHealthyLifeLink:visited {
+    color: var(--textBlack)
+}
+
+.pHealthyLifeLink.videoDescription {
+    color: white;
+}
+
+.pHealthyLifeLink.videoDescription:visited {
+    color: white;
+}
+
+.videoUnoSupplement p.pHealthyLife {
+    color: white;
+    padding: 0rem 1rem;
 }
