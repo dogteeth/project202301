@@ -505,6 +505,11 @@
     background: var(--c01);
 }
 
+::-webkit-scrollbar-thumb {
+    background: var(--c03);
+    border-radius: 1rem;
+}
+
 ::-webkit-scrollbar-thumb:horizontal {
     background: var(--c03);
     border-radius: 1rem;
