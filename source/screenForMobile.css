@@ -476,6 +476,7 @@
 /* 互動卡：基本設定 > 卡盒設定 */
 .cardsDeck {
     margin: 0rem 1rem;
+    min-height: 300px;
     height: 50vh;
     display: flex;
     overflow-x: auto;
@@ -490,14 +491,14 @@
 /* 互動卡：基本設定 > 卡盒滾輪隱藏 */
 
 ::-webkit-scrollbar {
-    height: 0.7rem;
-    width: 4px;
+    height: 1rem;
+    width: 1rem;
     background: var(--c01);
 }
 
 ::-webkit-scrollbar-thumb:horizontal {
     background: var(--c03);
-    border-radius: 10px;
+    border-radius: 1rem;
 }
 
 /* 互動卡：基本設定 > 卡片基本設定 */
